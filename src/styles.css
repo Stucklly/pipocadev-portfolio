@@ -819,8 +819,7 @@ textarea:focus-visible {
   color: var(--cream);
 }
 
-.price-index,
-.extras-label {
+.price-index {
   margin-bottom: 1.1rem;
   color: var(--coral-strong);
   font-weight: 700;
@@ -857,8 +856,7 @@ textarea:focus-visible {
   color: var(--mint);
 }
 
-:root[data-theme='dark'] .price-card:not(.price-card-accent, .price-card-wide) .price-index,
-:root[data-theme='dark'] .extras-label {
+:root[data-theme='dark'] .price-card:not(.price-card-accent, .price-card-wide) .price-index {
   color: var(--yellow);
 }
 
@@ -909,40 +907,6 @@ textarea:focus-visible {
 
 .price-card-wide .text-link {
   color: var(--petrol);
-}
-
-.extras {
-  margin-top: clamp(1.5rem, 4vw, 3rem);
-  display: grid;
-  gap: 2rem;
-  padding: clamp(1.4rem, 4vw, 2.5rem);
-  border-top: 2px solid var(--text);
-  border-bottom: 2px solid var(--text);
-}
-
-.extras-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.extras-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.extras-list strong {
-  white-space: nowrap;
-}
-
-.payment-note p:last-child {
-  max-width: 40rem;
-  margin-bottom: 0;
-  color: var(--text-muted);
-  line-height: 1.6;
 }
 
 .about {
@@ -1267,10 +1231,6 @@ textarea:focus-visible {
     display: grid;
     grid-template-columns: minmax(16rem, 0.75fr) minmax(20rem, 1.25fr);
     gap: 3rem;
-  }
-
-  .extras {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .services {

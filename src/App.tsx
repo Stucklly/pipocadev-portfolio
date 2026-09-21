@@ -298,7 +298,6 @@ function App() {
                 <li>Página única e responsiva</li>
                 <li>Apresentação, serviços e contato</li>
                 <li>WhatsApp e publicação online</li>
-                <li>Até 2 rodadas de ajustes</li>
               </ul>
               <p className="timeline">Prazo médio: 5 a 7 dias úteis</p>
               <a className="button button-secondary" href={whatsappLink('Olá, PipocaDev! Quero um orçamento para o plano Site One Page.')} target="_blank" rel="noreferrer">Quero este plano</a>
@@ -313,7 +312,6 @@ function App() {
                 <li>Início, sobre, serviços e diferenciais</li>
                 <li>FAQ, localização e contato</li>
                 <li>WhatsApp e publicação online</li>
-                <li>Até 2 rodadas de ajustes</li>
               </ul>
               <p className="timeline">Prazo médio: 7 a 10 dias úteis</p>
               <a className="button button-primary" href={whatsappLink('Olá, PipocaDev! Quero um orçamento para o plano Site Institucional.')} target="_blank" rel="noreferrer">Quero este plano</a>
@@ -330,7 +328,7 @@ function App() {
                 <ul>
                   <li>Início, sobre, serviços e contato</li>
                   <li>Páginas adicionais conforme a necessidade</li>
-                  <li>WhatsApp, publicação online e até 2 rodadas de ajustes</li>
+                  <li>WhatsApp e publicação online</li>
                 </ul>
                 <p className="timeline">Prazo médio: 10 a 15 dias úteis</p>
                 <a className="text-link" href={whatsappLink('Olá, PipocaDev! Quero conversar sobre um site completo.')} target="_blank" rel="noreferrer">Conversar sobre o escopo</a>
@@ -338,21 +336,6 @@ function App() {
             </article>
           </div>
 
-          <div className="extras" data-reveal>
-            <div>
-              <p className="extras-label">Ajustes futuros</p>
-              <ul className="extras-list">
-                <li><span>Ajuste simples</span><strong>R$ 50</strong></li>
-                <li><span>Ajuste médio</span><strong>R$ 100 a R$ 150</strong></li>
-                <li><span>Nova seção</span><strong>R$ 150 a R$ 300</strong></li>
-                <li><span>Nova página</span><strong>R$ 250 a R$ 500</strong></li>
-              </ul>
-            </div>
-            <div className="payment-note">
-              <p className="extras-label">Pagamento e ajustes</p>
-              <p>50% na entrada e 50% na entrega, antes da publicação final. Pagamento por Pix ou cartão com as taxas da plataforma. Depois das 2 rodadas incluídas, novas alterações são orçadas separadamente.</p>
-            </div>
-          </div>
         </section>
 
         <section className="about section-shell" id="sobre" aria-labelledby="about-title">
