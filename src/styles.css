@@ -835,38 +835,17 @@ textarea:focus-visible {
   letter-spacing: -0.035em;
 }
 
-.price {
-  margin-bottom: 1.25rem;
-  color: var(--petrol);
-  font-family: var(--font-display);
-  font-size: clamp(1.65rem, 4vw, 2.5rem);
-  font-weight: 800;
-  line-height: 1;
-}
-
-.price span {
-  font-size: 0.68em;
-}
-
-.price-card-accent .price {
-  color: var(--mint);
-}
-
-:root[data-theme='dark'] .price-card:not(.price-card-accent, .price-card-wide) .price {
-  color: var(--mint);
-}
-
 :root[data-theme='dark'] .price-card:not(.price-card-accent, .price-card-wide) .price-index {
   color: var(--yellow);
 }
 
-.price-card > p:not(.price-index, .price, .timeline),
-.price-card-wide > div > p:not(.price-index, .price, .timeline) {
+.price-card > p:not(.price-index, .timeline),
+.price-card-wide > div > p:not(.price-index, .timeline) {
   color: var(--text-muted);
   line-height: 1.55;
 }
 
-.price-card-accent > p:not(.price-index, .price, .timeline) {
+.price-card-accent > p:not(.price-index, .timeline) {
   color: #dceee6;
 }
 
@@ -903,6 +882,10 @@ textarea:focus-visible {
 .price-card-wide {
   background: var(--cream-deep);
   color: var(--brown);
+}
+
+.price-card-wide > div > p:not(.price-index, .timeline) {
+  color: var(--brown-soft);
 }
 
 .price-card-wide .text-link {

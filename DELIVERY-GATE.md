@@ -51,7 +51,7 @@ Status geral: PASS
 
 - C-1 PASS: cada decisão principal tem uma justificativa curta em `DESIGN.md`.
 - C-2 PASS: não há controle morto.
-- C-3 PASS: não há depoimentos, FAQ ou estatísticas usados como preenchimento; os preços são os valores fornecidos pela proprietária.
+- C-3 PASS: não há depoimentos, FAQ ou estatísticas usados como preenchimento; os três formatos apresentados correspondem aos serviços reais.
 - C-4 PASS: a interface foi revisada nos dois temas, em três faixas de largura e com teclado.
 - C-5 PASS: não há fato, resultado ou prova social fabricada.
 - R-05 PASS: as seções variam estrutura e seguem o conteúdo disponível.

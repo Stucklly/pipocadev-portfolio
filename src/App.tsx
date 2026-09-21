@@ -285,14 +285,13 @@ function App() {
           <div className="section-heading" data-reveal>
             <p className="section-number">03 / Planos</p>
             <h2 id="pricing-title">Um ponto de partida para cada tamanho de projeto.</h2>
-            <p>Os valores são faixas de referência. O orçamento final considera conteúdo, complexidade, urgência e recursos necessários.</p>
+            <p>Primeiro entendemos o que o seu site precisa. Depois que você confirmar interesse no formato, recebe uma proposta com o escopo e o valor do projeto.</p>
           </div>
 
           <div className="pricing-grid">
             <article className="price-card" data-reveal>
               <p className="price-index">01</p>
               <h3>Site One Page</h3>
-              <p className="price">R$ 500 <span>a R$ 700</span></p>
               <p>Para profissionais autônomos, prestadores de serviço e pequenos negócios que precisam começar bem na internet.</p>
               <ul>
                 <li>Página única e responsiva</li>
@@ -300,13 +299,12 @@ function App() {
                 <li>WhatsApp e publicação online</li>
               </ul>
               <p className="timeline">Prazo médio: 5 a 7 dias úteis</p>
-              <a className="button button-secondary" href={whatsappLink('Olá, PipocaDev! Quero um orçamento para o plano Site One Page.')} target="_blank" rel="noreferrer">Quero este plano</a>
+              <a className="button button-secondary" href={whatsappLink('Olá, PipocaDev! Quero entender melhor o formato Site One Page.')} target="_blank" rel="noreferrer">Quero saber mais</a>
             </article>
 
             <article className="price-card price-card-accent" data-reveal>
               <p className="price-index">02</p>
               <h3>Site institucional</h3>
-              <p className="price">R$ 700 <span>a R$ 1.200</span></p>
               <p>Para clínicas, escritórios, empresas locais e profissionais que precisam apresentar melhor sua atuação.</p>
               <ul>
                 <li>Início, sobre, serviços e diferenciais</li>
@@ -314,14 +312,13 @@ function App() {
                 <li>WhatsApp e publicação online</li>
               </ul>
               <p className="timeline">Prazo médio: 7 a 10 dias úteis</p>
-              <a className="button button-primary" href={whatsappLink('Olá, PipocaDev! Quero um orçamento para o plano Site Institucional.')} target="_blank" rel="noreferrer">Quero este plano</a>
+              <a className="button button-primary" href={whatsappLink('Olá, PipocaDev! Quero entender melhor o formato Site Institucional.')} target="_blank" rel="noreferrer">Quero saber mais</a>
             </article>
 
             <article className="price-card price-card-wide" data-reveal>
               <div>
                 <p className="price-index">03</p>
                 <h3>Site completo</h3>
-                <p className="price">A partir de R$ 1.200</p>
               </div>
               <div>
                 <p>Para negócios que precisam de mais páginas, mais serviços ou uma estrutura feita sob medida.</p>
@@ -331,7 +328,7 @@ function App() {
                   <li>WhatsApp e publicação online</li>
                 </ul>
                 <p className="timeline">Prazo médio: 10 a 15 dias úteis</p>
-                <a className="text-link" href={whatsappLink('Olá, PipocaDev! Quero conversar sobre um site completo.')} target="_blank" rel="noreferrer">Conversar sobre o escopo</a>
+                <a className="text-link" href={whatsappLink('Olá, PipocaDev! Quero entender melhor o formato Site Completo.')} target="_blank" rel="noreferrer">Quero saber mais</a>
               </div>
             </article>
           </div>
