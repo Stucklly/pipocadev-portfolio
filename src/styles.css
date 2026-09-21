@@ -1293,10 +1293,6 @@ textarea:focus-visible {
     gap: clamp(3rem, 7vw, 7rem);
   }
 
-  .hero-visual {
-    transform: rotate(1.5deg);
-  }
-
   .hero-copy {
     padding-bottom: 2rem;
   }
