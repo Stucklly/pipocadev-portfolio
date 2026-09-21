@@ -649,6 +649,7 @@ textarea:focus-visible {
 
 .project-image {
   min-width: 0;
+  display: block;
   overflow: hidden;
   border: 2px solid var(--text);
   border-radius: var(--radius-md);
@@ -658,14 +659,36 @@ textarea:focus-visible {
 
 .project-image img {
   width: 100%;
+  display: block;
+  transition: transform 260ms ease;
+}
+
+.project-featured .project-image {
   aspect-ratio: 16 / 10;
+}
+
+.project-featured .project-image img {
+  height: 100%;
   object-fit: cover;
   object-position: top;
-  transition: transform 260ms ease;
 }
 
 .project-image:hover img {
   transform: scale(1.015);
+}
+
+.project-secondary .project-image {
+  background: #f8f3eb;
+}
+
+.project-secondary .project-image img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.project-secondary .project-image:hover img {
+  transform: none;
 }
 
 .project-copy {
@@ -929,29 +952,45 @@ textarea:focus-visible {
 }
 
 .about-image {
-  max-width: 33rem;
-  justify-self: center;
-  padding: clamp(0.8rem, 2vw, 1.5rem);
+  order: 2;
+  width: min(13rem, 58vw);
+  justify-self: start;
+  padding: 0.45rem;
   border: 2px solid var(--text);
-  border-radius: var(--radius-lg) var(--radius-md) var(--radius-lg) var(--radius-md);
-  background: #000;
-  transform: rotate(-2deg);
-  box-shadow: var(--shadow-hard);
+  border-radius: var(--radius-lg) var(--radius-sm) var(--radius-lg) var(--radius-sm);
+  background: var(--surface-strong);
+  transform: rotate(-1deg);
+  box-shadow: 7px 7px 0 var(--petrol);
 }
 
 .about-image img {
-  border-radius: calc(var(--radius-md) - 0.3rem);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: calc(var(--radius-md) - 0.25rem) calc(var(--radius-sm) - 0.1rem) calc(var(--radius-md) - 0.25rem) calc(var(--radius-sm) - 0.1rem);
+}
+
+.about-image p {
+  margin: 0;
+  padding: 0.65rem 0.45rem 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.about-copy {
+  order: 1;
 }
 
 .about-copy > p:not(.section-number) {
   margin-top: 1.5rem;
 }
 
-.honest-note {
-  padding: 1.2rem 1.3rem;
-  border: 2px solid var(--text);
-  border-radius: var(--radius-sm);
-  background: var(--surface-strong);
+.about-copy .about-lede {
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  line-height: 1.55;
 }
 
 .contact {
@@ -1250,7 +1289,12 @@ textarea:focus-visible {
   }
 
   .about {
-    grid-template-columns: minmax(20rem, 0.85fr) minmax(22rem, 1.15fr);
+    grid-template-columns: minmax(13rem, 0.45fr) minmax(22rem, 1.55fr);
+  }
+
+  .about-image,
+  .about-copy {
+    order: initial;
   }
 
   .contact {

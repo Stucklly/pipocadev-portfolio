@@ -12,13 +12,13 @@ npm run dev
 ## Conteúdo publicado
 
 - WhatsApp: `(41) 98776-0721`.
+- Apresentação de Luara, responsável pela PipocaDev, com retrato fornecido pela própria profissional.
 - Modelos demonstrativos: Estúdio Modelo e Pequena Estação, ambos identificados como conteúdo conceitual.
 - Pacotes e faixas informados no material comercial: Site One Page, Site Institucional, Site Completo e ajustes futuros.
 - Condições de referência: 50% na entrada, 50% na entrega e até 2 rodadas de ajustes incluídas.
 
 ## Conteúdo que ainda precisa ser fornecido
 
-- Nome e apresentação da pessoa responsável pela PipocaDev.
 - Cidade, caso deva aparecer no site.
 - E-mail profissional, quando houver.
 - Links de GitHub, LinkedIn ou outras redes, quando houver.

@@ -8,6 +8,6 @@ Reading this as: portfolio de criação de sites para potenciais clientes, com l
 - Spacing: blocos densos perto de decisões e respiros amplos perto das imagens constroem ritmo sem alongar a página por hábito.
 - Surfaces: cantos arredondados aparecem em painéis de destaque; listas e áreas editoriais permanecem planas para preservar hierarquia.
 - Motion: a marca entra uma vez e os blocos principais revelam ao rolar; o restante usa feedback curto de interação para não competir com o conteúdo.
-- Imagery: as cinco artes oficiais permanecem reservadas à identidade; as duas imagens adicionais são capturas reais dos modelos publicados e recebem tratamento editorial próprio.
+- Imagery: as artes oficiais permanecem reservadas à identidade; as capturas dos modelos preservam sua proporção e o retrato real de Luara aparece em escala compacta para apoiar a apresentação pessoal.
 - Motif: grãos abstratos e uma barra horizontal repetem a linguagem do símbolo e tornam a página reconhecível mesmo sem o nome.
 - Pricing: três planos correspondem ao material comercial enviado; valores, prazos e condições aparecem como referência, com orçamento final condicionado ao escopo.

@@ -7,8 +7,8 @@ Status geral: PASS
 - R-02 PASS: a busca final não encontrou o caractere proibido nem conectores equivalentes no texto produzido.
 - R-03 PASS: o navegador registrou `scrollWidth` igual a `clientWidth` em 320 px; 390 px e desktop também foram revisados visualmente.
 - R-17 PASS: não há estatísticas ou números de desempenho sem fonte.
-- R-18 PASS: não há depoimentos, avatares ou pessoas fictícias.
-- R-23 PASS: as cinco imagens usadas foram fornecidas pela proprietária; nenhum novo logo ou retrato foi criado.
+- R-18 PASS: não há depoimentos, avatares ou pessoas fictícias; o retrato de Luara foi fornecido pela própria profissional.
+- R-23 PASS: as imagens de marca e o retrato foram fornecidos pela proprietária; nenhum novo logo ou rosto foi criado.
 - R-24 PASS: Início, Projetos, Serviços, Planos, Sobre e Contato apontam para seções existentes.
 - R-25 PASS: creme e marrom medem 15,11:1; creme e verde-petróleo medem 8,76:1; creme e coral forte medem 4,94:1.
 - R-26 PASS: temas alternam, menu abre e fecha, links navegam e o formulário gera um arquivo local.
@@ -20,7 +20,7 @@ Status geral: PASS
 - R-35 PASS: `npm run build` concluiu; menu, tema, navegação, CTAs e formulário foram exercitados; o console ficou sem avisos e erros; os dois sites publicados foram abertos com sucesso.
 - R-36 PASS: não há alegações de clientes, segurança, desempenho ou conformidade.
 - R-37 PASS: a leitura de design e os dials ENERGY 3, RHYTHM 3 e MOTION 2 estão registrados em `DESIGN.md`.
-- R-38 PASS: projetos demonstrativos e biografia pendente aparecem de forma explícita; não há conteúdo realista fabricado.
+- R-38 PASS: os projetos demonstrativos estão identificados e a apresentação de Luara usa apenas informações fornecidas; não há conteúdo realista fabricado.
 
 ## Purpose Gate
 

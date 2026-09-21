@@ -4,13 +4,13 @@ type Theme = 'light' | 'dark'
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
 const assets = {
-  symbol: '/assets/pipocadev-symbol-black.jpg',
   iconDark: '/assets/pipocadev-icon-dark.jpg',
   iconLight: '/assets/pipocadev-icon-light.jpg',
   lockupDark: '/assets/pipocadev-lockup-dark.jpg',
   lockupLight: '/assets/pipocadev-lockup-light.jpg',
   studioModel: '/assets/projeto-estudio-modelo.webp',
   boutiqueModel: '/assets/projeto-pequena-estacao.webp',
+  portrait: '/assets/luara.webp',
 }
 
 const whatsappNumber = '5541987760721'
@@ -222,7 +222,7 @@ function App() {
           <div className="project-list">
             <article className="project-featured" data-reveal>
               <a className="project-image" href="https://modelo-arquitetura-editorial.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Estúdio Modelo">
-                <img src={assets.studioModel} alt="Página inicial do Estúdio Modelo, projeto demonstrativo para arquitetura" width="1440" height="900" loading="lazy" />
+                <img src={assets.studioModel} alt="Página inicial do Estúdio Modelo, projeto demonstrativo para arquitetura" width="1440" height="5776" loading="lazy" />
               </a>
               <div className="project-copy">
                 <p className="project-kind">Projeto demonstrativo / Arquitetura</p>
@@ -238,7 +238,7 @@ function App() {
 
             <article className="project-secondary" data-reveal>
               <a className="project-image" href="https://modelo-boutique-infantil.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Pequena Estação">
-                <img src={assets.boutiqueModel} alt="Página inicial da Pequena Estação, projeto demonstrativo para boutique infantil" width="1440" height="900" loading="lazy" />
+                <img src={assets.boutiqueModel} alt="Página inicial da Pequena Estação, projeto demonstrativo para boutique infantil" width="1440" height="1000" loading="lazy" />
               </a>
               <div className="project-copy">
                 <p className="project-kind">Projeto demonstrativo / Boutique infantil</p>
@@ -357,13 +357,14 @@ function App() {
 
         <section className="about section-shell" id="sobre" aria-labelledby="about-title">
           <div className="about-image" data-reveal>
-            <img src={assets.symbol} alt="Símbolo principal da PipocaDev: pipoca combinada a uma janela de código" width="1280" height="1280" loading="lazy" />
+            <img src={assets.portrait} alt="Retrato de Luara, criadora da PipocaDev" width="800" height="800" loading="lazy" />
+            <p>Luara / PipocaDev</p>
           </div>
           <div className="about-copy" data-reveal>
             <p className="section-number">04 / Sobre</p>
-            <h2 id="about-title">Pipoca no nome. Código no centro.</h2>
-            <p>A PipocaDev é uma marca de criação de sites que aproxima personalidade visual e desenvolvimento. O símbolo mistura o estouro da pipoca com uma janela de navegador para resumir essa ideia em um só gesto.</p>
-            <p className="honest-note"><strong>Em construção:</strong> a apresentação de quem está por trás da marca e a cidade serão publicadas quando essas informações forem definidas.</p>
+            <h2 id="about-title">Oi, eu sou a Luara.</h2>
+            <p className="about-lede">Tenho 29 anos e trabalho na área de tecnologia há mais de 10 anos. Na PipocaDev, junto essa experiência a um olhar atento para transformar ideias em sites claros, responsivos e com identidade.</p>
+            <p>Gosto de projetos que precisam organizar uma presença digital de um jeito direto, profissional e próximo. Cuido da estrutura, do visual e dos detalhes para que cada site funcione bem em diferentes telas.</p>
           </div>
         </section>
 
