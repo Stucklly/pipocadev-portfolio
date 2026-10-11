@@ -641,7 +641,8 @@ textarea:focus-visible {
 }
 
 .project-featured,
-.project-secondary {
+.project-secondary,
+.project-tertiary {
   display: grid;
   gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: center;
@@ -691,6 +692,19 @@ textarea:focus-visible {
   transform: none;
 }
 
+.project-image-app {
+  min-height: clamp(20rem, 48vw, 34rem);
+  display: grid;
+  place-items: center;
+  padding: clamp(2rem, 6vw, 5rem);
+  background: #fff;
+}
+
+.project-image-app img {
+  width: min(78%, 28rem);
+  height: auto;
+}
+
 .project-copy {
   min-width: 0;
 }
@@ -738,6 +752,12 @@ textarea:focus-visible {
 .project-copy dd {
   margin: 0;
   color: var(--text-muted);
+}
+
+.project-availability {
+  margin-top: 1.2rem;
+  color: var(--text);
+  font-weight: 700;
 }
 
 :root[data-theme='dark'] .text-link {
@@ -1203,6 +1223,11 @@ textarea:focus-visible {
   .project-secondary .project-copy {
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .project-tertiary {
+    grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 0.7fr);
+    width: 94%;
   }
 
   .pricing-grid {

@@ -8,8 +8,9 @@ const assets = {
   iconLight: '/assets/pipocadev-icon-light.jpg',
   lockupDark: '/assets/pipocadev-lockup-dark.jpg',
   lockupLight: '/assets/pipocadev-lockup-light.jpg',
-  studioModel: '/assets/projeto-estudio-modelo.webp',
-  boutiqueModel: '/assets/projeto-pequena-estacao.webp',
+  formaEssencia: '/assets/projeto-forma-essencia.png',
+  pdv: '/assets/projeto-pdv.png',
+  umbandaApp: '/assets/projeto-app-umbanda.png',
   portrait: '/assets/luara.webp',
 }
 
@@ -215,40 +216,56 @@ function App() {
         <section className="projects section-shell" id="projetos" aria-labelledby="projects-title">
           <div className="section-heading" data-reveal>
             <p className="section-number">01 / Projetos</p>
-            <h2 id="projects-title">Dois caminhos, uma ideia: cada site pede uma voz.</h2>
-            <p>Modelos autorais desenvolvidos para demonstrar direção visual, organização de conteúdo e experiência responsiva. Não representam clientes reais.</p>
+            <h2 id="projects-title">Sites e sistemas feitos para necessidades diferentes.</h2>
+            <p>Uma seleção que vai da apresentação de marca a ferramentas de gestão. O Forma &amp; Essência é demonstrativo e o PDV tem acesso privado.</p>
           </div>
 
           <div className="project-list">
             <article className="project-featured" data-reveal>
-              <a className="project-image" href="https://modelo-arquitetura-editorial.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Estúdio Modelo">
-                <img src={assets.studioModel} alt="Página inicial do Estúdio Modelo, projeto demonstrativo para arquitetura" width="1440" height="5776" loading="lazy" />
+              <a className="project-image" href="https://forma-essencia.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Forma e Essência">
+                <img src={assets.formaEssencia} alt="Página inicial do site demonstrativo Forma e Essência" width="1265" height="710" loading="lazy" />
               </a>
               <div className="project-copy">
-                <p className="project-kind">Projeto demonstrativo / Arquitetura</p>
-                <h3>Estúdio Modelo</h3>
-                <p>Um site institucional de linguagem editorial para apresentar arquitetura, interiores e paisagismo com ritmo calmo e bastante espaço para as imagens.</p>
+                <p className="project-kind">Projeto demonstrativo / Design de interiores</p>
+                <h3>Forma &amp; Essência</h3>
+                <p>Site editorial e responsivo criado para apresentar um estúdio de interiores, organizar serviços, exibir projetos e conduzir o contato pelo WhatsApp.</p>
                 <dl>
-                  <div><dt>Desenvolvimento</dt><dd>Direção visual, conteúdo demonstrativo, interface e responsividade</dd></div>
+                  <div><dt>Desenvolvimento</dt><dd>Direção visual, conteúdo demonstrativo, filtros de portfólio, formulário e responsividade</dd></div>
                   <div><dt>Tecnologias</dt><dd>HTML, CSS e JavaScript</dd></div>
                 </dl>
-                <a className="text-link" href="https://modelo-arquitetura-editorial.vercel.app/" target="_blank" rel="noreferrer">Visitar o modelo</a>
+                <a className="text-link" href="https://forma-essencia.vercel.app/" target="_blank" rel="noreferrer">Visitar o projeto</a>
               </div>
             </article>
 
             <article className="project-secondary" data-reveal>
-              <a className="project-image" href="https://modelo-boutique-infantil.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Pequena Estação">
-                <img src={assets.boutiqueModel} alt="Página inicial da Pequena Estação, projeto demonstrativo para boutique infantil" width="1440" height="1000" loading="lazy" />
+              <div className="project-image project-image-pdv">
+                <img src={assets.pdv} alt="Tela de venda do sistema Distribuidora Gestão e PDV" width="1365" height="900" loading="lazy" />
+              </div>
+              <div className="project-copy">
+                <p className="project-kind">Sistema privado / Gestão e ponto de venda</p>
+                <h3>Distribuidora | Gestão e PDV</h3>
+                <p>Sistema para registrar vendas e manter estoque, produção, caixa e rotinas financeiras da distribuidora no mesmo ambiente.</p>
+                <dl>
+                  <div><dt>Desenvolvimento</dt><dd>Fluxo de venda, estoque, receitas, produção, caixa, relatórios e importação de NF-e</dd></div>
+                  <div><dt>Tecnologias</dt><dd>React, Vinext, Worker, D1 e R2</dd></div>
+                </dl>
+                <p className="project-availability">Acesso restrito à operação da distribuidora.</p>
+              </div>
+            </article>
+
+            <article className="project-tertiary" data-reveal>
+              <a className="project-image project-image-app" href="https://mensageiros-cosme-damiao.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o aplicativo Mensageiros de Cosme e Damião">
+                <img src={assets.umbandaApp} alt="Símbolo do Centro Espiritualista Mensageiros de Cosme e Damião" width="512" height="512" loading="lazy" />
               </a>
               <div className="project-copy">
-                <p className="project-kind">Projeto demonstrativo / Boutique infantil</p>
-                <h3>Pequena Estação</h3>
-                <p>Um modelo de loja com apresentação editorial, catálogo de nove peças, filtros e percurso pensado para levar o visitante até o atendimento.</p>
+                <p className="project-kind">Aplicativo web / Gestão comunitária</p>
+                <h3>Mensageiros de Cosme e Damião</h3>
+                <p>Aplicativo criado para reunir agenda, confirmações de presença, consultas, obrigações, mensalidades e rotinas administrativas do centro.</p>
                 <dl>
-                  <div><dt>Desenvolvimento</dt><dd>Identidade demonstrativa, catálogo, filtros, interface e responsividade</dd></div>
-                  <div><dt>Tecnologias</dt><dd>HTML, CSS e JavaScript</dd></div>
+                  <div><dt>Desenvolvimento</dt><dd>Autenticação, módulos para membros e administração, notificações e instalação como aplicativo</dd></div>
+                  <div><dt>Tecnologias</dt><dd>React, Vite, Supabase e PWA</dd></div>
                 </dl>
-                <a className="text-link" href="https://modelo-boutique-infantil.vercel.app/" target="_blank" rel="noreferrer">Visitar o modelo</a>
+                <a className="text-link" href="https://mensageiros-cosme-damiao.vercel.app/" target="_blank" rel="noreferrer">Abrir o aplicativo</a>
               </div>
             </article>
           </div>
