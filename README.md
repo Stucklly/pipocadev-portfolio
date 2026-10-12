@@ -13,7 +13,8 @@ npm run dev
 
 - WhatsApp: `(41) 98776-0721`.
 - Apresentação de Luara, responsável pela PipocaDev, com retrato fornecido pela própria profissional.
-- Projetos apresentados: Forma & Essência (demonstrativo), Distribuidora | Gestão e PDV (sistema privado) e Mensageiros de Cosme e Damião (aplicativo web).
+- Projetos apresentados: Impacta Redes de Proteção, Forma & Essência, Distribuidora | Gestão e PDV, Mensageiros de Cosme e Damião, Estúdio Modelo e Pequena Estação.
+- Impacta é um site publicado; Forma & Essência, Estúdio Modelo e Pequena Estação são demonstrativos; o PDV tem acesso privado.
 - Formatos apresentados no portfólio: Site One Page, Site Institucional e Site Completo. Os valores são enviados somente após o alinhamento inicial e a confirmação de interesse do cliente.
 
 ## Conteúdo que ainda precisa ser fornecido

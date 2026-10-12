@@ -8,9 +8,12 @@ const assets = {
   iconLight: '/assets/pipocadev-icon-light.jpg',
   lockupDark: '/assets/pipocadev-lockup-dark.jpg',
   lockupLight: '/assets/pipocadev-lockup-light.jpg',
+  impacta: '/assets/projeto-impacta.png',
   formaEssencia: '/assets/projeto-forma-essencia.png',
   pdv: '/assets/projeto-pdv.png',
   umbandaApp: '/assets/projeto-app-umbanda.png',
+  studioModel: '/assets/projeto-estudio-modelo.webp',
+  boutiqueModel: '/assets/projeto-pequena-estacao.webp',
   portrait: '/assets/luara.webp',
 }
 
@@ -216,11 +219,27 @@ function App() {
         <section className="projects section-shell" id="projetos" aria-labelledby="projects-title">
           <div className="section-heading" data-reveal>
             <p className="section-number">01 / Projetos</p>
-            <h2 id="projects-title">Sites e sistemas feitos para necessidades diferentes.</h2>
-            <p>Uma seleção que vai da apresentação de marca a ferramentas de gestão. O Forma &amp; Essência é demonstrativo e o PDV tem acesso privado.</p>
+            <h2 id="projects-title">Sites e sistemas que já ganharam forma.</h2>
+            <p>Seis trabalhos entre projetos publicados, sistemas privados e estudos autorais. Cada um aparece com seu contexto real, sem inventar resultados.</p>
           </div>
 
           <div className="project-list">
+            <article className="project-spotlight" data-reveal>
+              <a className="project-image" href="https://impacta-redes-de-protecao.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o site Impacta Redes de Proteção">
+                <img src={assets.impacta} alt="Página inicial do site Impacta Redes de Proteção" width="1265" height="710" loading="lazy" />
+              </a>
+              <div className="project-copy">
+                <p className="project-kind">Site institucional / Redes de proteção</p>
+                <h3>Impacta Redes de Proteção</h3>
+                <p>Site criado para apresentar instalações reais, explicar as soluções e preparar pedidos de orçamento pelo WhatsApp.</p>
+                <dl>
+                  <div><dt>Desenvolvimento</dt><dd>Direção editorial, seletor de necessidades, galeria ampliável, formulário e responsividade</dd></div>
+                  <div><dt>Tecnologias</dt><dd>React, Vite e GSAP</dd></div>
+                </dl>
+                <a className="text-link" href="https://impacta-redes-de-protecao.vercel.app/" target="_blank" rel="noreferrer">Visitar o site</a>
+              </div>
+            </article>
+
             <article className="project-featured" data-reveal>
               <a className="project-image" href="https://forma-essencia.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Forma e Essência">
                 <img src={assets.formaEssencia} alt="Página inicial do site demonstrativo Forma e Essência" width="1265" height="710" loading="lazy" />
@@ -268,6 +287,40 @@ function App() {
                 <a className="text-link" href="https://mensageiros-cosme-damiao.vercel.app/" target="_blank" rel="noreferrer">Abrir o aplicativo</a>
               </div>
             </article>
+
+            <div className="project-archive" data-reveal>
+              <div className="project-archive-heading">
+                <div>
+                  <p className="project-kind">Arquivo / Estudos autorais</p>
+                  <h3>Modelos que abriram o caminho.</h3>
+                </div>
+                <p>Projetos demonstrativos preservados no portfólio para mostrar outras linguagens visuais e formas de organizar conteúdo.</p>
+              </div>
+
+              <div className="project-archive-list">
+                <a className="archive-project" href="https://modelo-arquitetura-editorial.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Estúdio Modelo">
+                  <span className="archive-index" aria-hidden="true">05</span>
+                  <img src={assets.studioModel} alt="Página inicial do projeto demonstrativo Estúdio Modelo" width="1440" height="5776" loading="lazy" />
+                  <div>
+                    <p>Projeto demonstrativo / Arquitetura</p>
+                    <h3>Estúdio Modelo</h3>
+                    <p>Site institucional com linguagem editorial para arquitetura, interiores e paisagismo.</p>
+                  </div>
+                  <span className="archive-action">Visitar projeto</span>
+                </a>
+
+                <a className="archive-project" href="https://modelo-boutique-infantil.vercel.app/" target="_blank" rel="noreferrer" aria-label="Abrir o projeto demonstrativo Pequena Estação">
+                  <span className="archive-index" aria-hidden="true">06</span>
+                  <img src={assets.boutiqueModel} alt="Página inicial do projeto demonstrativo Pequena Estação" width="1440" height="1000" loading="lazy" />
+                  <div>
+                    <p>Projeto demonstrativo / Boutique infantil</p>
+                    <h3>Pequena Estação</h3>
+                    <p>Loja demonstrativa com catálogo, filtros e percurso direcionado ao atendimento.</p>
+                  </div>
+                  <span className="archive-action">Visitar projeto</span>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -640,12 +640,22 @@ textarea:focus-visible {
   gap: clamp(2rem, 6vw, 5rem);
 }
 
+.project-spotlight,
 .project-featured,
 .project-secondary,
 .project-tertiary {
   display: grid;
   gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: center;
+}
+
+.project-spotlight {
+  padding: clamp(1rem, 3vw, 2rem);
+  color: var(--cream);
+  background: var(--petrol);
+  border: 2px solid var(--text);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard);
 }
 
 .project-image {
@@ -668,6 +678,17 @@ textarea:focus-visible {
   aspect-ratio: 16 / 10;
 }
 
+.project-spotlight .project-image,
+.project-featured .project-image img {
+  aspect-ratio: 16 / 10;
+}
+
+.project-spotlight .project-image {
+  border-color: var(--cream);
+  box-shadow: none;
+}
+
+.project-spotlight .project-image img,
 .project-featured .project-image img {
   height: 100%;
   object-fit: cover;
@@ -758,6 +779,130 @@ textarea:focus-visible {
   margin-top: 1.2rem;
   color: var(--text);
   font-weight: 700;
+}
+
+.project-spotlight .project-kind,
+:root[data-theme='dark'] .project-spotlight .project-kind {
+  color: var(--mint);
+}
+
+.project-spotlight .project-copy > p:not(.project-kind),
+.project-spotlight .project-copy dd {
+  color: #dceee6;
+}
+
+.project-spotlight .project-copy dl,
+.project-spotlight .project-copy dl div {
+  border-color: #73c3a3;
+}
+
+.project-spotlight .text-link,
+:root[data-theme='dark'] .project-spotlight .text-link {
+  color: var(--yellow);
+}
+
+.project-archive {
+  padding-top: clamp(1rem, 3vw, 2rem);
+  border-top: 3px solid var(--text);
+}
+
+.project-archive-heading {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+.project-archive-heading h3 {
+  max-width: 18ch;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.project-archive-heading > p {
+  max-width: 38rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.project-archive-list {
+  border-bottom: 1px solid var(--line);
+}
+
+.archive-project {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  min-height: 44px;
+  padding: 1.2rem 0;
+  color: var(--text);
+  text-decoration: none;
+  border-top: 1px solid var(--line);
+  transition: background-color 180ms ease, padding 180ms ease;
+}
+
+.archive-project:hover {
+  padding-inline: 0.75rem;
+  background: var(--surface-strong);
+}
+
+.archive-index {
+  color: var(--coral-strong);
+  font-weight: 800;
+}
+
+.archive-project img {
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid var(--text);
+  border-radius: var(--radius-sm);
+}
+
+.archive-project > div {
+  grid-column: 2;
+}
+
+.archive-project > div > p:first-child {
+  margin-bottom: 0.45rem;
+  color: var(--petrol);
+  font-weight: 700;
+}
+
+:root[data-theme='dark'] .archive-project > div > p:first-child {
+  color: var(--mint);
+}
+
+.archive-project h3 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  line-height: 1;
+}
+
+.archive-project > div > p:last-child {
+  max-width: 40rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.archive-action {
+  grid-column: 2;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  color: var(--petrol);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.35rem;
+}
+
+:root[data-theme='dark'] .archive-action {
+  color: var(--mint);
 }
 
 :root[data-theme='dark'] .text-link {
@@ -1209,6 +1354,10 @@ textarea:focus-visible {
     grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
   }
 
+  .project-spotlight {
+    grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.65fr);
+  }
+
   .project-secondary {
     grid-template-columns: minmax(18rem, 0.65fr) minmax(0, 1.1fr);
     width: 90%;
@@ -1228,6 +1377,23 @@ textarea:focus-visible {
   .project-tertiary {
     grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 0.7fr);
     width: 94%;
+  }
+
+  .project-archive-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
+    align-items: end;
+  }
+
+  .archive-project {
+    grid-template-columns: 3.5rem minmax(10rem, 15rem) minmax(18rem, 1fr) auto;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2.5rem);
+  }
+
+  .archive-project img,
+  .archive-project > div,
+  .archive-action {
+    grid-column: auto;
   }
 
   .pricing-grid {
