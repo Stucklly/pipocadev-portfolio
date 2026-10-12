@@ -855,7 +855,7 @@ textarea:focus-visible {
 .archive-project img {
   grid-column: 2;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: clamp(10rem, 48vw, 14rem);
   object-fit: cover;
   object-position: top;
   border: 1px solid var(--text);
@@ -1394,6 +1394,10 @@ textarea:focus-visible {
   .archive-project > div,
   .archive-action {
     grid-column: auto;
+  }
+
+  .archive-project img {
+    height: 8.5rem;
   }
 
   .pricing-grid {
